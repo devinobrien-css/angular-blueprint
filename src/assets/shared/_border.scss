@@ -1,0 +1,88 @@
+
+@import '_variables';
+
+/**
+ * Border Sizing 
+ * 
+ */
+.border-1 {
+    border: 1px solid;
+}
+
+.border-2 {
+    border: 2px solid;
+}
+
+.border-b-1 {
+    border-bottom: 1px solid;
+}
+
+/**
+ * Border Color
+ * 
+ */
+.border-primary {
+    border-color: $primary-color;
+}
+
+.border-primary-dark {
+    border-color: $dark-primary-color;
+}
+
+.border-secondary {
+    border-color: $secondary-color;
+}
+
+
+/**
+ * Border Radius
+ * 
+ */
+ .rounded-sm {
+    border-radius: 0.2rem;
+}
+
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+
+.rounded-md {
+  border-radius: 0.3rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-full {
+  border-radius: 100%;
+}
+
+/**
+ * Overflow Behavior
+ * 
+ */
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-visible {
+  overflow: visible;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+
+

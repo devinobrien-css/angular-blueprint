@@ -1,0 +1,158 @@
+@import '../_variables.scss';
+
+.button-primary {
+    background-color: $primary-color;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: darken($primary-color, 10%);
+    }
+
+    &:active {
+        background-color: darken($primary-color, 20%);
+    }
+
+    &:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+
+    &.small {
+        padding: 0.5em 1em;
+        font-size: 1.1rem;
+
+        @media screen and (max-width: $screen-md){
+            padding: 0.5em 1em;
+            font-size: 0.8rem;
+        }
+    }
+
+    &.large {
+        padding: 1em 2em;
+        font-size: 1.2rem;
+    }
+}
+
+.button-secondary {
+    background-color: $secondary-color;
+    color: #fff;
+    border: none;
+    padding: 0.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: darken($secondary-color, 10%);
+    }
+
+    &:active {
+        background-color: darken($secondary-color, 20%);
+    }
+
+    &:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+
+    &.small {
+        padding: 0.5em 1em;
+        font-size: 1.1rem;
+
+        @media screen and (max-width: $screen-md){
+            padding: 0.5em 1em;
+            font-size: 0.8rem;
+        }
+    }
+
+    &.large {
+        padding: 1em 2em;
+        font-size: 1.2rem;
+    }
+}
+
+.button-danger {
+    background-color: $danger-color;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: darken($danger-color, 10%);
+    }
+
+    &:active {
+        background-color: darken($danger-color, 20%);
+    }
+
+    &:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+
+    &.small {
+        padding: 0.5em 1em;
+        font-size: 1.1rem;
+
+        @media screen and (max-width: $screen-md){
+            padding: 0.5em 1em;
+            font-size: 0.8rem;
+        }
+    }
+
+    &.large {
+        padding: 1em 2em;
+        font-size: 1.2rem;
+    }
+}
+
+.button-success {
+    background-color: $success-color;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: darken($success-color, 10%);
+    }
+
+    &:active {
+        background-color: darken($success-color, 20%);
+    }
+
+    &:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+
+    &.small {
+        padding: 0.5em 1em;
+        font-size: 1.1rem;
+        
+        @media screen and (max-width: $screen-md){
+            padding: 0.5em 1em;
+            font-size: 0.8rem;
+        }
+    }
+
+    &.large {
+        padding: 1em 2em;
+        font-size: 1.2rem;
+    }
+}

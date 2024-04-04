@@ -1,0 +1,51 @@
+/**
+ * Variables
+ *
+ * This file contains all the variables used in the project.
+ * You can change the values of the variables to customize the project.
+ */
+
+/* Fonts
+ * These are the fonts used in the project.
+ * You can change the values of the fonts to customize the project.
+ */
+$font-lato: 'Lato', sans-serif;
+$font-montserrat: 'Montserrat', sans-serif;
+
+
+/* Breakpoints
+ * These are the breakpoints used in the project.
+ * You can change the values of the breakpoints to customize the project.
+ */
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+/* Colors
+ * These are the colors used in the project.
+ * You can change the values of the colors to customize the project.
+ */
+$primary-color: #a1a1c6;
+$light-primary-color: #f8f9fa;
+$dark-primary-color: #343a40;
+
+$light-secondary-color: #e9ecef;
+$secondary-color: #6c757d;
+$secondary-color-dark: #495057;
+
+$success-color-light: #d4edda;
+$success-color: #28a745;
+$success-color-dark: #155724;
+
+$info-color-light: #d1ecf1;
+$info-color: #17a2b8;
+$info-color-dark: #0c5460;
+
+$warning-color-light: #fff3cd;
+$warning-color: #ffc107;
+$warning-color-dark: #664d03;
+
+$danger-color-light: #f8d7da;
+$danger-color: #dc3545;
+$danger-color-dark: #721c24;

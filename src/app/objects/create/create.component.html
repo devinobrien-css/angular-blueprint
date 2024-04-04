@@ -1,0 +1,71 @@
+<div class="p-8">
+    <h1 class="font-lato">Create Object</h1>
+    <p class="text-gray-600">
+        This component creates an object by sending a POST request to a RESTful API.
+    </p>
+
+    <br/>
+
+    <a 
+        href="/objects" 
+        class="button-primary small"
+    >
+        back
+    </a>
+
+    <br/>
+    <br/>
+
+    <form class="shadow rounded">
+        <h2 class="font-light text-2xl p-4">
+            Object Details
+        </h2>
+        <hr/>
+        <div class="p-4">
+            <div class="flex flex-col">
+                <label for="name" class="font-light text-lg">
+                    Name
+                    <span class="text-danger">
+                        *
+                    </span>
+                    <span class="text-danger text-sm">
+                        {{
+                            name.errors?.['required']  && (name.dirty || name.touched) ? 
+                            'This is a required field' : 
+                            ' '
+                        }}
+                    </span>
+                </label>
+                <input id="name" type="text" [formControl]="name" placeholder="Enter name..."/>
+            </div>
+    
+            <br/>
+    
+            <div class="flex flex-col">
+                <label for="description" class="font-light text-lg">
+                    Description
+                    <span class="text-danger">
+                        *
+                    </span>
+                    <span class="text-danger text-sm">
+                        {{
+                            description.errors?.['required']  && (description.dirty || description.touched) ? 
+                            'This is a required field' : 
+                            ' '
+                        }}
+                    </span>
+                </label>
+                <textarea id="description" [formControl]="description" placeholder="Enter description..."></textarea>
+            </div>
+        </div>
+    </form>
+    <br/>
+    <div class="flex justify-end">
+        <button 
+        class="button-success small" 
+        (click)="onSubmit()"
+        >
+            Create Object
+        </button>
+    </div>
+</div>

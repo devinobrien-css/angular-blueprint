@@ -1,0 +1,70 @@
+<div class="p-6">
+    <div class="rounded p-2">
+        <h1 class="font-lato">Read All</h1>
+        <p class="text-gray-600">
+            This component fetches data from a RESTful API and displays it in a table.
+        </p>
+        
+        <br/>
+        
+        <div class="flex justify-between">
+            <input id="name" class="p-2 rounded shadow" placeholder="Search..." type="text" [formControl]="search"/>
+
+            <a 
+                href="/objects/create" 
+                class="button-primary small"
+            >
+                Create
+            </a>
+        </div>
+
+        <br/>
+
+        <!-- 
+            Conditional Example 
+
+            If objects is not null or undefined, then the div will be rendered.
+        -->
+        <div *ngIf="objects">
+            <div 
+            [ngClass]="[
+            'rounded bg-primary shadow overflow-hidden'
+            ].join(' ')"
+            >   
+                <div class="flex justify-between p-4">
+                    <span class="w-10 text-left font-bold text-white">Id</span>
+                    <span class="w-50 text-left font-bold text-white">Name</span>
+                    <span class="w-25 text-left font-bold text-white">Actions</span>
+                </div>
+                <div class="bg-white max-h-50 overflow-scroll">
+
+                    <!-- 
+                        Loop Example 
+                        
+                        For each object in objects, a button will be rendered.
+                    -->
+                    <div 
+                        *ngFor="let object of objects" 
+                        [ngClass]="[
+                            'flex justify-between',
+                            'p-4 w-100',
+                            'hover:bg-light-primary',
+                        ].join(' ')"
+                    >
+                        <div class="text-left w-10">{{ object.id }}</div>
+                        <div class="text-left w-50">{{ object.name }}</div>
+                        <div class="w-25 flex gap-1">
+                            <a 
+                                target="_self"
+                                class="button-secondary small"
+                                href="/objects/{{ object.id }}/edit"
+                            >
+                                Edit
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

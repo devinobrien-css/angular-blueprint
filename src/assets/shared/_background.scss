@@ -1,0 +1,78 @@
+
+@import '_variables.scss';
+
+
+/**
+ * Background Color
+ 
+ */
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-light-primary {
+  background-color: $light-primary-color;
+}
+.hover\:bg-light-primary:hover {
+  background-color: $light-primary-color;
+}
+
+
+.bg-primary {
+  background-color: $primary-color;
+}
+.hover\:bg-primary:hover {
+  background-color: $primary-color;
+}
+
+
+.bg-dark-primary {
+  background-color: $dark-primary-color;
+}
+.hover\:bg-dark-primary:hover {
+  background-color: $dark-primary-color;
+}
+
+
+.bg-secondary {
+  background-color: $secondary-color;
+}
+.hover\:bg-secondary:hover {
+  background-color: $secondary-color;
+}
+
+.bg-secondary-light {
+  background-color: $light-secondary-color;
+}
+.hover\:bg-secondary-light:hover {
+  background-color: $light-secondary-color;
+}
+
+.bg-danger {
+  background-color: $danger-color;
+}
+.hover\:bg-danger:hover {
+  background-color: $danger-color;
+}
+
+.bg-danger-light {
+  background-color: $danger-color-light;
+}
+.hover\:bg-danger-light:hover {
+  background-color: $danger-color-light;
+}
+
+
+.bg-success {
+  background-color: $success-color;
+}
+.hover\:bg-success:hover {
+  background-color: $success-color;
+}
+.bg-success-light {
+  background-color: $success-color-light;
+}
+.hover\:bg-success-light:hover {
+  background-color: $success-color-light;
+}
+

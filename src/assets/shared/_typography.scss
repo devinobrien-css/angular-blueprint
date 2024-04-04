@@ -1,0 +1,149 @@
+@import "variables.scss";
+
+.font-lato {
+    font-family: $font-lato;
+}
+
+.font-montserrat {
+    font-family: $font-montserrat;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+/**
+ * Font Weight
+ * 
+ */
+.font-light {
+    font-weight: 300;
+}
+
+.font-normal {
+    font-weight: 400;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+
+
+/**
+ * Font Size
+ * 
+ */
+.text-xs {
+    font-size: 0.75rem;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.text-base {
+    font-size: 1rem;
+}
+
+
+/** 
+ * Text Color
+ * 
+ */
+.text-white {
+    color: #fff;
+}
+
+
+.text-danger {
+    color: $danger-color;
+}
+.hover\:text-danger:hover {
+    color: $danger-color;
+}
+
+.text-danger-light {
+    color: $danger-color-light;
+}
+.hover\:text-danger-light:hover {
+    color: $danger-color-light;
+}
+
+.text-primary {
+    color: $primary-color;
+}
+.hover\:text-primary:hover {
+    color: $primary-color;
+}
+
+
+/** 
+ * Text Decoration
+ * 
+ */
+
+.underline {
+    text-decoration: underline;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.italic {
+    font-style: italic;
+}
+
+
+/**
+ * Text Size
+ */
+.text-xxs {
+    font-size: 0.5rem;
+}
+
+.text-xs {
+    font-size: 0.75rem;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.text-md {
+    font-size: 1rem;
+}
+
+.text-lg {
+    font-size: 1.25rem;
+}
+
+.text-xl {
+    font-size: 1.5rem;
+}
+
+.text-2xl {
+    font-size: 2rem;
+}
+
+.text-3xl {
+    font-size: 2.5rem;
+}
+
+.text-4xl {
+    font-size: 3rem;
+}

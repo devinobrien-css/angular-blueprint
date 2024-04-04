@@ -1,0 +1,111 @@
+<div class="p-8">
+    <h1 class="font-lato">Edit Object</h1>
+    <p class="text-gray-600">
+        This component demonstrates retrieving variables from a URL and how to edit an object by sending a PUT request to a RESTful API.
+    </p>
+
+    <br/>
+
+    <a 
+        href="/objects" 
+        class="button-primary small"
+    >
+        back
+    </a>
+
+    <br/>
+    <br/>
+    
+    <form class="shadow rounded">
+        <h2 class="font-light p-4">
+            Object Details
+        </h2>
+
+        <hr/>
+
+        <div class="p-4">
+            <h3 class="font-light">ID:  {{id}}</h3>
+            <br/>
+            <div class="flex flex-col">
+                <label for="name" class="font-light text-lg">
+                    Name
+                    <span class="text-red-400">
+                        *
+                    </span>
+                    <span class="text-red-400 text-sm">
+                        {{
+                            name.errors?.['required']  && (name.dirty || name.touched) ? 
+                            'This is a required field' : 
+                            ' '
+                        }}
+                    </span>
+                </label>
+                <input id="name" type="text" [formControl]="name" placeholder="Enter name..."/>
+            </div>
+    
+            <br/>
+    
+            <div class="flex flex-col">
+                <label for="description" class="font-light text-lg">
+                    Description
+                    <span class="text-red-400">
+                        *
+                    </span>
+                    <span class="text-red-400 text-sm">
+                        {{
+                            description.errors?.['required']  && (description.dirty || description.touched) ? 
+                            'This is a required field' : 
+                            ' '
+                        }}
+                    </span>
+                </label>
+                <textarea id="description" [formControl]="description" placeholder="Enter description..."></textarea>
+            </div>
+        </div>
+    </form>
+
+    <div class="flex justify-end gap-2 p-4 ">
+        <button 
+        class="button-success small" 
+        (click)="onSubmit()"
+        >
+            Update Object
+        </button>
+        <button 
+            class="button-danger small"
+            (click)="onConfirmDelete()"
+        >
+            Delete Object
+        </button>
+
+        <p-toast position="bottom-center" key="confirm-delete" (onClose)="onCancelDelete()" [baseZIndex]="5000">
+            <ng-template let-message pTemplate="message">
+                <div class="flex flex-col w-100">
+                    <div class="text-center mx-auto">
+                        <h4 class="text-lg font-bold">{{message.summary}}</h4>
+                        <p>{{message.detail}}</p>
+                    </div>
+                    <br/>
+                    <div class="flex justify-center gap-2 w-100">
+                        <div 
+                            class="button-danger"   
+                            label="Yes"
+                            type="button" 
+                            (click)="onDelete()" 
+                        >
+                            Confirm
+                        </div>
+                        <button 
+                            class="button-primary"
+                            label="No"
+                            type="button" 
+                            (click)="onCancelDelete()" 
+                        >
+                            Cancel
+                        </button>
+                    </div>
+                </div>
+            </ng-template>
+        </p-toast>
+    </div>
+</div>

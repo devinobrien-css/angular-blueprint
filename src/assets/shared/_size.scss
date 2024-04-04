@@ -1,0 +1,49 @@
+
+
+.max-h-50 {
+    max-height: 50vh;
+  }
+
+.max-h-75 {
+  max-height: 75vh;
+}
+
+
+.w-10 {
+  width: 10%;
+}
+
+.w-15 {
+  width: 15%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-33 {
+  width: 33.33333%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.max-w-75 {
+  max-width: 75%;
+
+  transition: all 1s ease;
+
+  @media screen and (max-width: $screen-md) {
+    max-width: 100%;
+    
+  }
+}
