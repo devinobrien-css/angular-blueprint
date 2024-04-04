@@ -29,10 +29,10 @@
             <div class="flex flex-col">
                 <label for="name" class="font-light text-lg">
                     Name
-                    <span class="text-red-400">
+                    <span class="text-danger">
                         *
                     </span>
-                    <span class="text-red-400 text-sm">
+                    <span class="text-danger text-sm">
                         {{
                             name.errors?.['required']  && (name.dirty || name.touched) ? 
                             'This is a required field' : 
@@ -48,10 +48,10 @@
             <div class="flex flex-col">
                 <label for="description" class="font-light text-lg">
                     Description
-                    <span class="text-red-400">
+                    <span class="text-danger">
                         *
                     </span>
-                    <span class="text-red-400 text-sm">
+                    <span class="text-danger text-sm">
                         {{
                             description.errors?.['required']  && (description.dirty || description.touched) ? 
                             'This is a required field' : 

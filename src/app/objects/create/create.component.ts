@@ -15,6 +15,7 @@ import { ToastModule } from 'primeng/toast';
   templateUrl: './create.component.html',
   styleUrl: './create.component.scss'
 })
+
 export class CreateComponent {
   name = new FormControl('', Validators.required);
   description = new FormControl('', Validators.required);
@@ -34,6 +35,7 @@ export class CreateComponent {
       }).subscribe(() => {
         window.location.href = '/objects?created=true';
       });
+      
     } catch (error) {
       console.error(error);
       this.messageService.add({severity:'error', summary: 'Error', detail: 'Message Content'});

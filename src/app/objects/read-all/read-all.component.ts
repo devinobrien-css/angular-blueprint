@@ -19,8 +19,9 @@ import { ToastModule } from 'primeng/toast';
 })
 export class ReadAllComponent {
   objects: any[] = [];
-  loading: boolean = true;
   originalObjects: any[] = [];
+
+  loading: boolean = true;
   search = new FormControl('');
 
   constructor(private http: HttpClient, private activatedRoute: ActivatedRoute, private messageService: MessageService, private router: Router) {
@@ -67,7 +68,7 @@ export class ReadAllComponent {
       (data:any) => {
         this.originalObjects = data.objects ?? [];
         this.objects = data.objects ?? [];
-        setTimeout(() => this.loading = false, 800);
+        setTimeout(() => this.loading = false, 800); // simulate loading
       }
     );
   }

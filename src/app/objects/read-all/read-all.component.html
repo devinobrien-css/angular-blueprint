@@ -26,10 +26,11 @@
             If objects is not null or undefined, then the div will be rendered.
         -->
         <div *ngIf="objects">
+
             <div 
-            [ngClass]="[
-            'rounded bg-primary shadow overflow-hidden'
-            ].join(' ')"
+                [ngClass]="[
+                'rounded bg-primary shadow overflow-hidden'
+                ].join(' ')"
             >   
                 <div class="flex justify-between p-4">
                     <span class="w-10 text-left font-bold text-white">Id</span>
